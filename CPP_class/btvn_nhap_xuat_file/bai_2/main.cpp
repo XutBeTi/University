@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <fstream.h>
 using namespace std;
 ifstream fi ("data.in");
 ofstream fo ("data.out");

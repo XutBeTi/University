@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <fstream>
 using namespace std;
 ifstream fi ("mang1.txt");
 ofstream fo ("mang2.txt");

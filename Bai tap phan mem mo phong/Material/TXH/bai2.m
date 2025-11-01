@@ -51,5 +51,4 @@ plot([min(x) x(end)], [0 0], 'k--', 'LineWidth', 1);
 % Thiết lập nhãn và tiêu đề
 xlabel('Khoang cach ngang (m)');
 ylabel('Do cao (m)');
-title(['Quy dao vat nem xien (v0 = ', num2str(v0), ' m/s, goc = ', num2str(45), ' do)']);
-axis equal tight; % Đảm bảo tỷ lệ trục hợp lý và vừa khít dữ liệu
+title(['Quy dao vat nem xien (v0 = ', num2str(v0), ' m/s)' ]);

@@ -57,9 +57,9 @@ else
             x1=temp;
         end 
 
-        text(x1, -sign(a)*(delta/4/a)*0.3 ,['(',num2str(x1),',',num2str(0),')'],'horizontalalignment','right');
+        text(x1, -sign(a)*(-delta/4/a)*0.8 ,['(',num2str(x1),',',num2str(0),')'],'horizontalalignment','right');
         hold on;
-        text(x2, -sign(a)*(delta/4/a)*0.3 ,['(',num2str(x2),',',num2str(0),')'],'horizontalalignment','left');
+        text(x2 , -sign(a)*(-delta/4/a)*0.8 ,['(',num2str(x2),',',num2str(0),')'],'horizontalalignment','left');
         hold on;
 
         space=x2-x1;

@@ -41,7 +41,7 @@ text( 0 , y0 -1, 'Diem nem (10m)', 'HorizontalAlignment', 'left');
 
 % Đánh dấu điểm chạm đất
 plot(x(end), 0 , 'rx', 'MarkerSize', 10, 'LineWidth', 2);
-text(x(end)* 0.95, 1 , 'Cham dat', 'HorizontalAlignment', 'right');
+text(x(end), 0.5 , 'Cham dat', 'HorizontalAlignment', 'left');
 
 plot(x(end)*1.1, 0 , 'wx', 'MarkerSize', 1);
 

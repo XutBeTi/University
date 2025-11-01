@@ -1,6 +1,6 @@
 clc;
 clear;
-close;
+close all;
 
 %u=i*r;
 

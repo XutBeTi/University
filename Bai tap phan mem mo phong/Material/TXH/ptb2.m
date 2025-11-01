@@ -38,14 +38,16 @@ else
         
     elseif (delta==0)
         x1=-b/(2*a);
-        disp (['phuong trinh co 1 nghiem kep x= ', num2str(x1)]);
+        disp (['Phuong trinh co 1 nghiem kep x= ', num2str(x1)]);
         x= x1-3:0.01:x1+3;
         plot ( [x1],[0], 'ro' , 'markersize' , 8, 'markerfacecolor', 'r' );
+        hold on;
+        plot ( [x1],[-(a*5)], 'wo' , 'markersize' , 1, 'markerfacecolor', 'w' );
           
     else
         x1=(-b-sqrt(delta))/(2*a);
         x2=(-b+sqrt(delta))/(2*a);
-        disp (['phuong trinh co 2 nghiem x1= ', num2str(x1),' va x2= ', num2str(x2)]);
+        disp (['Phuong trinh co 2 nghiem x1= ', num2str(x1),' va x2= ', num2str(x2)]);
 
         if (x1>x2)
             temp=x2;
@@ -53,10 +55,8 @@ else
             x1=temp;
         end 
 
-        space=x2-x1; 
-
-        x= x1-space*0.2 : 0.01 : x2+space*0.2;
-
+        space=x2-x1;
+        x= x1-space*0.3 : 0.01 : x2+space*0.3;
         plot ( [x1 x2],[0 0], 'ro' , 'markersize' , 8, 'markerfacecolor', 'r' );
             
     end
@@ -75,7 +75,7 @@ plot(x, y, 'k-', 'LineWidth', 2);
 hold on;
 
 y=x.*0;
-plot( x  , y , 'k-', 'LineWidth', 1);
+plot( x  , y , 'k--', 'LineWidth', 1);
 
 hold on;
     
